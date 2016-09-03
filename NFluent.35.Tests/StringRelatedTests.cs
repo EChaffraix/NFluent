@@ -670,7 +670,7 @@ namespace NFluent.Tests
         public void LongStringErrorMessageIsProperlyTruncated()
         {
             var checkString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\CheckedFile.xml", Encoding.UTF8);
-            var expectedString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\CheckedFile.xml", Encoding.UTF8);
+            var expectedString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\ExpectedFile.xml", Encoding.UTF8);
 
             Check.ThatCode(() =>
             {
