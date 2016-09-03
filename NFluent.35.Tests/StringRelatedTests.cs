@@ -672,6 +672,9 @@ namespace NFluent.Tests
             var checkString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\CheckedFile.xml", Encoding.UTF8);
             var expectedString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\ExpectedFile.xml", Encoding.UTF8);
 
+            Check.That(checkString).HasSize(5101);
+            Check.That(expectedString).HasSize(5101);
+
             Check.ThatCode(() =>
             {
                 Check.That(checkString).IsEqualTo(expectedString);
