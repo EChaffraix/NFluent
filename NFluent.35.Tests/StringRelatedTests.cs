@@ -668,8 +668,8 @@ namespace NFluent.Tests
         [Test]
         public void LongStringErrorMessageIsProperlyTruncated()
         {
-            var checkString = File.ReadAllText("CheckedFile.xml", Encoding.UTF8);
-            var expectedString = File.ReadAllText("ExpectedFile.xml", Encoding.UTF8);
+            var checkString = File.ReadAllText("./CheckedFile.xml", Encoding.UTF8);
+            var expectedString = File.ReadAllText("./ExpectedFile.xml", Encoding.UTF8);
 
             Check.ThatCode(() =>
             {

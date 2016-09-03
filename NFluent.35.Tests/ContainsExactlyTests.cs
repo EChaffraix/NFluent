@@ -249,8 +249,8 @@ namespace NFluent.Tests
         [Test]
         public void ContainsExactlyWorksOnLargeArrays()
         {
-            var checkString = File.ReadAllBytes("CheckedFile.xml");
-            var expectedString = File.ReadAllBytes("CheckedFile.xml");
+            var checkString = File.ReadAllBytes("./CheckedFile.xml");
+            var expectedString = File.ReadAllBytes("./CheckedFile.xml");
 
             Check.That(checkString).ContainsExactly(expectedString);
 
