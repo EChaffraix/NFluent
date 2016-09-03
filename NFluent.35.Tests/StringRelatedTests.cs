@@ -672,16 +672,13 @@ namespace NFluent.Tests
             var checkString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\CheckedFile.xml", Encoding.UTF8);
             var expectedString = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\ExpectedFile.xml", Encoding.UTF8);
 
-            Check.That(checkString).HasSize(5101);
-            Check.That(expectedString).HasSize(5101);
-
             Check.ThatCode(() =>
             {
                 Check.That(checkString).IsEqualTo(expectedString);
                 // ReverseEngineeringExceptionMessagesHelper.DumpReadyToCopyAndPasteExceptionMessageInAFile(() => Check.That(checkString).IsEqualTo(expectedString));
             })
             .Throws<FluentCheckException>()
-            .WithMessage("\nThe checked string is different from the expected one but has same length. At 4963, expected '...IST>Joe Cooker</ARTI...' was '...IST>Joe Cocker</ARTI...'\nThe checked string:\n\t[\"<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<!--  Edited by XMLSpy  -->\r\n<CATALOG>\r\n  <CD>\r\n    <TITLE>Empire Burlesque</TITLE>\r\n    <ARTIST>Bob Dylan</A...<<truncated>>...  <YEAR>1987</YEAR>\r\n  </CD>\r\n</CATALOG>\"]\nThe expected string:\n\t[\"<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<!--  Edited by XMLSpy  -->\r\n<CATALOG>\r\n  <CD>\r\n    <TITLE>Empire Burlesque</TITLE>\r\n    <ARTIST>Bob Dylan</A...<<truncated>>...  <YEAR>1987</YEAR>\r\n  </CD>\r\n</CATALOG>\"]");
+            .WithMessage("\nThe checked string is different from the expected one but has same length. At 4758, expected '...IST>Joe Cooker</ARTI...' was '...IST>Joe Cocker</ARTI...'\nThe checked string:\n\t[\"<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<!--  Edited by XMLSpy  -->\n<CATALOG>\n  <CD>\n    <TITLE>Empire Burlesque</TITLE>\n    <ARTIST>Bob Dylan</ARTIST...<<truncated>>...    <YEAR>1987</YEAR>\n  </CD>\n</CATALOG>\"]\nThe expected string:\n\t[\"<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<!--  Edited by XMLSpy  -->\n<CATALOG>\n  <CD>\n    <TITLE>Empire Burlesque</TITLE>\n    <ARTIST>Bob Dylan</ARTIST...<<truncated>>...    <YEAR>1987</YEAR>\n  </CD>\n</CATALOG>\"]");
         }
     }
 }
