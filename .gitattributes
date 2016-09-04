@@ -1,5 +1,5 @@
 # Auto detect text files that will always have CRLF line endings on checkout.
-# * eol=crlf
+# * text eol=crlf
 
 # Custom for Visual Studio
 *.cs     diff=csharp
