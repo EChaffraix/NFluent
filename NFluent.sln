@@ -30,15 +30,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{00C82A
 		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFluent.Tests.MsTest", "NFluent.Tests.MsTest\NFluent.Tests.MsTest.csproj", "{83DA2FA6-76B3-4804-9E27-0F532A5FA8EF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFluent.35", "NFluent.35\NFluent.35.csproj", "{3A474510-F384-41CE-9270-539B1E51DA7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFluent.40", "NFluent.40\NFluent.40.csproj", "{1E2D9D56-D0A4-4D2E-8F2B-F211000E1667}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFluent.40.Tests", "NFluent.40.Tests\NFluent.40.Tests.csproj", "{BDAA4D22-45A1-470E-A142-70E1F194EE3F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFluent.Tests.MsTest.40", "NFluent.Tests.MsTest.40\NFluent.Tests.MsTest.40.csproj", "{C2A9D408-A220-4502-883A-33648C57354A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFluent.35.Tests", "NFluent.35.Tests\NFluent.35.Tests.csproj", "{6B88C45A-D45E-40FB-8635-D0E0EF0454E9}"
 EndProject
@@ -54,10 +50,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83DA2FA6-76B3-4804-9E27-0F532A5FA8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83DA2FA6-76B3-4804-9E27-0F532A5FA8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83DA2FA6-76B3-4804-9E27-0F532A5FA8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83DA2FA6-76B3-4804-9E27-0F532A5FA8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A474510-F384-41CE-9270-539B1E51DA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A474510-F384-41CE-9270-539B1E51DA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A474510-F384-41CE-9270-539B1E51DA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -70,10 +62,6 @@ Global
 		{BDAA4D22-45A1-470E-A142-70E1F194EE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDAA4D22-45A1-470E-A142-70E1F194EE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDAA4D22-45A1-470E-A142-70E1F194EE3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2A9D408-A220-4502-883A-33648C57354A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2A9D408-A220-4502-883A-33648C57354A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2A9D408-A220-4502-883A-33648C57354A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2A9D408-A220-4502-883A-33648C57354A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B88C45A-D45E-40FB-8635-D0E0EF0454E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B88C45A-D45E-40FB-8635-D0E0EF0454E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B88C45A-D45E-40FB-8635-D0E0EF0454E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
