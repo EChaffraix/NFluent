@@ -21,7 +21,8 @@
         [Test]
         public void Should_Escape_CRLF()
         {
-            Check.That(ReverseEngineeringExceptionMessagesHelper.GetProperlyEscapedMessage(@"CRLF is:\r\n.")).IsEqualTo(@"CRLF is:\r\n.");
+            Check.That(ReverseEngineeringExceptionMessagesHelper.GetProperlyEscapedMessage(@"CRLF is:
+.")).IsEqualTo(@"CRLF is:\r\n.");
         }
     }
 }
